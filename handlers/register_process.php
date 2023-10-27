@@ -12,13 +12,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $query = "INSERT INTO users (username, password) VALUES(?, ?)";
 
     if ($statement = $connection->prepare($query)) {
+        // bind_param(data values - E.g. "ss" = string string for username and hashed_password)
         $statement->bind_param("ss", $username, $hashed_password);
 
         if ($statement->execute()) {
             // Successful
             echo "Inserted data into the database.";
-
-            header("Location: ./index.php")
+            // Redirect to registration successful page
+            header("Location: ../pages/register_success.php");
 
         } else {
             echo "Error: " . $statement->error;

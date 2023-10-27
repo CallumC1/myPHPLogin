@@ -8,11 +8,11 @@
 </head>
 <body class="">
     <!-- Register Form -->
-    <h1 class="text-xl">Register</h1>
     <form action="../handlers/register_process.php"
             method="POST"
-            class="gap-y-2 border-2 border-black flex flex-col p-10 mx-auto w-96">
-        <span class="flex w-full">
+            class="gap-y-2 border-2 border-black flex flex-col p-10 pt-3 mx-auto w-96">
+        <h1 class="text-xl text-center">Register</h1>
+            <span class="flex w-full">
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" class="border border-black ml-auto w-44" required>
         </span>

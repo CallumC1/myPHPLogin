@@ -8,11 +8,11 @@
 </head>
 <body class="">
     <!-- Login Form -->
-    <h1 class="text-xl">Login</h1>
     <form action="../handlers/login_process.php"
             method="POST"
-            class="gap-y-2 border-2 border-black flex flex-col p-10 mx-auto w-96">
-        <span class="flex w-full">
+            class="gap-y-2 border-2 border-black flex flex-col p-10 pt-3 mx-auto w-96">
+        <h1 class="text-xl text-center">Login</h1>
+            <span class="flex w-full">
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" class="border border-black ml-auto w-44" required>
         </span>
@@ -22,7 +22,7 @@
             <input type="password" name="password" id="password" class="border border-black ml-auto w-44" required>
         </span>
 
-        <button type="submit" class="w-44 h-12 bg-slate-600 text-white ml-auto">Register</button>
+        <button type="submit" class="w-44 h-12 bg-slate-600 text-white ml-auto">Login</button>
     </form>
 </body>
 </html>
